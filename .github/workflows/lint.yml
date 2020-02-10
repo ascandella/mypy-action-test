@@ -18,10 +18,11 @@ jobs:
           python-version: 3.8
 
       - name: Install Python dependencies
-        run: pip install mypy>=0.761
+        run: |
+          pip install mypy==0.761
 
       - name: Run linters
-        uses: ascandella/lint-action@add-mypy
+        uses: samuelmeuli/lint-action@v1.1.0
         with:
           github_token: ${{ secrets.github_token }}
           mypy: true

@@ -3,4 +3,4 @@ def main(input_str: str):
 
 
 if __name__ == '__main__':
-    main(1234)
+    main({1: "key should be a string"})
